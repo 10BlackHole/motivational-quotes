@@ -1,11 +1,8 @@
 import numpy as np
 
-# quotes = ["However bad life may seem, there is always something you can do and succeed at. Where there's life, there's hope. - Stephen Hawking"]
-quotes = np.genfromtxt("quotes.txt", dtype='str', delimiter='-')
-
-# phrase = quotes[:,0]
-# author = quotes[:,1]
-# print(quotes)
+quotes = np.loadtxt("quotes.txt", dtype='str', delimiter='-')
+phrases= np.loadtxt("quotes.txt", usecols=0, dtype='str', delimiter='-')
+authors = np.loadtxt("quotes.txt", usecols=1, dtype='str', delimiter='-')
 
 # def add():
     # print("Add a motivational quote")
