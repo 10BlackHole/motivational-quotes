@@ -6,6 +6,7 @@ def text():
     n = random.randint(0, len(quotes)-1)
     # print(phrases[n] + ' - ' + authors[n])
     return(phrases[n] + ' - ' + authors[n])
+    # return phrases[n], authors[n]
 
 def ventana(x):
     ventana = tk.Tk()
